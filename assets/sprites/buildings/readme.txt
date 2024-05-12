@@ -1,1 +1,1 @@
-README
+Place buildings assets file here

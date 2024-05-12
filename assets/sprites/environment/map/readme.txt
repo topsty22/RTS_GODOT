@@ -1,1 +1,1 @@
-README
+Place map assets file here

@@ -1,1 +1,1 @@
-README
+Place environment map assets file here

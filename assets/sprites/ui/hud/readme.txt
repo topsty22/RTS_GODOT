@@ -1,1 +1,1 @@
-README
+Place HUD sprites file here
