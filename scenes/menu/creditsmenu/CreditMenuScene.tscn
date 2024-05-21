@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwvdx0056a5m5"]
+
+[ext_resource type="Script" path="res://scenes/menu/creditsmenu/CreditMenuScene.gd" id="1_hj763"]
+[ext_resource type="Texture2D" uid="uid://blua5vwb07fyi" path="res://assets/sprites/ui/menu/menubackground.jpg" id="1_wul8e"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hj763")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_wul8e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 116.0
+offset_top = 64.0
+offset_right = -115.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Credits" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "CREDITS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Artistic Director : Ambroise
+Graphisme/Animation : Bartho
+Animation/Effects : Leo
+Music/SFX : Timon
+Development : GGG & Antoine
+
+Made with Godot 
+Thanks to Github, the community
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cancel" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Cancel"

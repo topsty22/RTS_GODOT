@@ -23,9 +23,9 @@ texture = ExtResource("1_y1wxs")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 offset_left = 116.0
-offset_top = 67.0
+offset_top = 64.0
 offset_right = 1037.0
-offset_bottom = 577.0
+offset_bottom = 512.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -46,33 +46,32 @@ size_flags_stretch_ratio = 0.0
 alignment = 1
 
 [node name="Volume" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer"]
-layout_mode = 2
-text = "Volume"
-
-[node name="HSlider" type="HSlider" parent="VBoxContainer/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(100, 12)
+custom_minimum_size = Vector2(100, 25)
 layout_mode = 2
 size_flags_vertical = 8
+text = " Volume  "
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+size_flags_vertical = 4
 
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/MarginContainer2"]
 layout_mode = 2
 alignment = 1
 
 [node name="Fullscreen" type="Label" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 25)
 layout_mode = 2
 text = "Fullscreen"
 
 [node name="CheckBox" type="CheckBox" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 25)
 layout_mode = 2
-text = "Yes"
-
-[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
-layout_mode = 2
-text = "No"
+text = " Yes"
 
 [node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -82,23 +81,35 @@ size_flags_vertical = 3
 layout_mode = 2
 alignment = 1
 
-[node name="Résolution" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer3"]
+[node name="Resolution" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 25)
 layout_mode = 2
 text = "Résolution"
 
 [node name="OptionButton" type="OptionButton" parent="VBoxContainer/MarginContainer3/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 25)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="Save" type="Button" parent="VBoxContainer"]
+[node name="Save" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 25)
 layout_mode = 2
+offset_left = 426.0
+offset_top = 529.0
+offset_right = 576.0
+offset_bottom = 560.0
+size_flags_horizontal = 4
+size_flags_vertical = 14
+text = "Save Change"
+
+[node name="Cancel" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 25)
+layout_mode = 2
+offset_left = 641.0
+offset_top = 528.0
+offset_right = 741.0
+offset_bottom = 559.0
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "Save Game"
-
-[node name="Cancel" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 10
 text = "Cancel"

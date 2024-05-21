@@ -4,11 +4,10 @@ extends Control
 @onready var volume_slider: HSlider = $VBoxContainer/MarginContainer/HBoxContainer/HSlider
 @onready var fullscreen_label: Label = $VBoxContainer/MarginContainer2/HBoxContainer2/Fullscreen
 @onready var checkbox1: CheckBox = $VBoxContainer/MarginContainer2/HBoxContainer2/CheckBox
-@onready var checkbox2: CheckBox = $VBoxContainer/MarginContainer2/HBoxContainer2/CheckBox2
 @onready var resolution_label: Label = $VBoxContainer/MarginContainer3/HBoxContainer3/Resolution
 @onready var option_button: OptionButton = $VBoxContainer/MarginContainer3/HBoxContainer3/OptionButton
-@onready var save_button: Button = $VBoxContainer/Save
-@onready var cancel_button: Button = $VBoxContainer/Cancel
+@onready var save_button: Button = $Save
+@onready var cancel_button: Button = $Cancel
 
 func _ready():
 	# Connect button
@@ -17,8 +16,7 @@ func _ready():
 	
 	# Initial values
 	volume_slider.value = 50  
-	checkbox1.set_pressed(false)  
-	checkbox2.set_pressed(false)  
+	checkbox1.set_pressed(false)    
 	option_button.add_item("1024x768")
 	option_button.add_item("1280x720")
 	option_button.add_item("1920x1080")

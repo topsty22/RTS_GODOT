@@ -66,6 +66,10 @@ text = "Start"
 layout_mode = 2
 text = "Options"
 
+[node name="SaveLoadButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Save & Load"
+
 [node name="CreditButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Credits"
