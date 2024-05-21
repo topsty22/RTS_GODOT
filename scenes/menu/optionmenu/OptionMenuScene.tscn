@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://cipuplh2o8asp"]
+
+[ext_resource type="Script" path="res://scenes/menu/optionmenu/OptionMenuScene.gd" id="1_xrabw"]
+[ext_resource type="Texture2D" uid="uid://blua5vwb07fyi" path="res://assets/sprites/ui/menu/menubackground.jpg" id="1_y1wxs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xrabw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -8.0
+offset_right = 1906.0
+offset_bottom = 1072.0
+texture = ExtResource("1_y1wxs")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 116.0
+offset_top = 67.0
+offset_right = 1037.0
+offset_bottom = 577.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "OPTION MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+alignment = 1
+
+[node name="Volume" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Volume"
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 12)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/MarginContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Fullscreen" type="Label" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "Yes"
+
+[node name="CheckBox2" type="CheckBox" parent="VBoxContainer/MarginContainer2/HBoxContainer2"]
+layout_mode = 2
+text = "No"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/MarginContainer3"]
+layout_mode = 2
+alignment = 1
+
+[node name="Résolution" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer3"]
+layout_mode = 2
+text = "Résolution"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/MarginContainer3/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Save" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Save Game"
+
+[node name="Cancel" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+text = "Cancel"

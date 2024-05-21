@@ -15,7 +15,7 @@ func _on_StartButton_pressed():
 	print("Start button pressed")
 
 func _on_OptionButton_pressed():
-	print("Options button pressed")
+	get_tree().change_scene_to_file("res://scenes/menu/optionmenu/OptionMenuScene.tscn")
 
 func _on_CreditButton_pressed():
 	print("Credits button pressed")
