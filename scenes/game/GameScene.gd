@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var tile_size = Vector2(64, 32)
-@export var camera_speed = 2.0  # Adjust the camera movement speed as needed
+@export var camera_speed = 2.0  # Camera movement speed
 
 # Variables
 var camera: Camera2D
@@ -9,12 +9,11 @@ var tilemap: TileMap
 var drag_start_position: Vector2
 
 func _ready():
-	# Initialize the Camera2D node
+	
 	camera = $Camera2D
-	camera.make_current()  # Set the camera as the current one
-	camera.zoom = Vector2(1, 1)  # Adjust zoom level if necessary
+	camera.make_current()  # Set the camera
+	camera.zoom = Vector2(1, 1)  # Zoom
 
-	# Initialize the TileMap node
 	tilemap = $TileMap
 
 func _input(event):
@@ -32,5 +31,5 @@ func _process(delta):
 		# Calculate the movement vector based on the difference between current and start drag positions
 		var drag_delta = get_viewport().get_mouse_position() - drag_start_position
 
-		# Adjust the camera position based on the drag delta
+		# Adjust the camera position
 		camera.offset -= drag_delta * delta * camera_speed
