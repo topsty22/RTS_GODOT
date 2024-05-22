@@ -14,7 +14,7 @@ func _ready():
 	quit_button.connect("pressed", Callable(self, "_on_QuitButton_pressed"))
 
 func _on_StartButton_pressed():
-	print("Start button pressed")
+	get_tree().change_scene_to_file("res://scenes/game/GameScene.tscn")
 
 func _on_OptionButton_pressed():
 	get_tree().change_scene_to_file("res://scenes/menu/optionmenu/OptionMenuScene.tscn")
