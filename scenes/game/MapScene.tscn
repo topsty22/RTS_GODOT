@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cuonb6lw6wwo"]
+
+[ext_resource type="Script" path="res://scenes/game/MapScene.gd" id="1_7x33g"]
+[ext_resource type="Material" uid="uid://dle278nkw676j" path="res://assets/sprites/environment/map/terrain.material.tres" id="2_vpb5n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3whp"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qmprw"]
+size = Vector2(1000, 1000)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_h7a2u"]
+resource_local_to_scene = true
+material = ExtResource("2_vpb5n")
+size = Vector2(100, 100)
+center_offset = Vector3(50, 0, 50)
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_7x33g")
+
+[node name="Geometry" type="Node3D" parent="."]
+
+[node name="Background" type="MeshInstance3D" parent="Geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+material_override = SubResource("StandardMaterial3D_k3whp")
+mesh = SubResource("PlaneMesh_qmprw")
+
+[node name="Terrain" type="MeshInstance3D" parent="Geometry"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+mesh = SubResource("PlaneMesh_h7a2u")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.988494, 0.109721, -0.104121, 0, 0.688355, 0.725374, 0.151261, 0.717028, -0.680434, 50, 15, 0)
+fov = 92.5

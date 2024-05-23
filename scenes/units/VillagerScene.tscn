@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://owxh7x1ek7cx"]
+
+[ext_resource type="ArrayMesh" uid="uid://dd845ux03ipns" path="res://assets/sprites/units/villager/1797364251b8_a__glb_format_of_a_.obj" id="1_kn4lp"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5lr5g"]
+
+[node name="Villager" type="Area3D"]
+
+[node name="Geometry" type="Node3D" parent="."]
+
+[node name="VillagerUnit" type="Node3D" parent="Geometry"]
+
+[node name="Node3D" type="Node3D" parent="Geometry/VillagerUnit"]
+
+[node name="Villager1" type="MeshInstance3D" parent="Geometry/VillagerUnit/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0230368, 0.520102, -0.0202667)
+mesh = ExtResource("1_kn4lp")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_5lr5g")
