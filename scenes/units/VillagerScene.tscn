@@ -13,7 +13,7 @@
 [node name="Node3D" type="Node3D" parent="Geometry/VillagerUnit"]
 
 [node name="Villager1" type="MeshInstance3D" parent="Geometry/VillagerUnit/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0230368, 0.520102, -0.0202667)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = ExtResource("1_kn4lp")
 skeleton = NodePath("../..")
 

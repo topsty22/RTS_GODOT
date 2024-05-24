@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df8ruwj8pgf3u"
+path="res://.godot/imported/4a3d00dba7de_i_need_a_3D_Stable_.obj-d6ad6df710e065a63b3a6e367f0958b6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/4a3d00dba7de_i_need_a_3D_Stable_.obj-d6ad6df710e065a63b3a6e367f0958b6.mesh"]
+
+source_file="res://assets/sprites/buildings/d26522e2a16c_4a3d00dba7de_i_need_a_3D_Stable__obj/4a3d00dba7de_i_need_a_3D_Stable_.obj"
+dest_files=["res://.godot/imported/4a3d00dba7de_i_need_a_3D_Stable_.obj-d6ad6df710e065a63b3a6e367f0958b6.mesh", "res://.godot/imported/4a3d00dba7de_i_need_a_3D_Stable_.obj-d6ad6df710e065a63b3a6e367f0958b6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

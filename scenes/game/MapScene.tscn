@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cuonb6lw6wwo"]
+[gd_scene load_steps=7 format=3 uid="uid://cuonb6lw6wwo"]
 
 [ext_resource type="Script" path="res://scenes/game/MapScene.gd" id="1_7x33g"]
 [ext_resource type="Material" uid="uid://dle278nkw676j" path="res://assets/sprites/environment/map/terrain.material.tres" id="2_vpb5n"]
+[ext_resource type="PackedScene" uid="uid://vyo3ps4s6lrt" path="res://assets/animation/units/knight.glb" id="3_4j5h2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3whp"]
 shading_mode = 0
@@ -31,5 +32,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 mesh = SubResource("PlaneMesh_h7a2u")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.988494, 0.109721, -0.104121, 0, 0.688355, 0.725374, 0.151261, 0.717028, -0.680434, 50, 15, 0)
-fov = 92.5
+transform = Transform3D(-0.66262, -0.296246, 0.687875, 0, 0.918447, 0.395545, -0.748956, 0.262096, -0.608581, 50, 5, 0)
+fov = 36.9
+near = 0.012
+far = 112.59
+
+[node name="knight" parent="." instance=ExtResource("3_4j5h2")]
+transform = Transform3D(-0.769165, 0, 0.63905, 0, 1, 0, -0.63905, 0, -0.769165, 45.6755, 0, 9.06757)

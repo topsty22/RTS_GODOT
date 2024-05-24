@@ -1,0 +1,13 @@
+# Blender 3.6.1 MTL File: 'None'
+# www.blender.org
+
+newmtl Material_0
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd 4a3d00dba7de_i_need_a_3D_Stable__texture_kd.jpg
+map_Ns 4a3d00dba7de_i_need_a_3D_Stable__roughness.jpg
+map_refl 4a3d00dba7de_i_need_a_3D_Stable__metallic.jpg

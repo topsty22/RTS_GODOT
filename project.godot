@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.2", "Mobile")
 boot_splash/bg_color=Color(0.125911, 0.125911, 0.125911, 1)
 config/icon="res://icon.svg"
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [rendering]
 
 renderer/rendering_method="mobile"
