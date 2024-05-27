@@ -15,7 +15,7 @@ func _ready():
 
 # Function loading
 func start_loading():
-	# Simulate loading with timer (replace with assets)
+	# Simulate loading with timer
 	var timer: Timer = Timer.new()
 	timer.wait_time = 0.1
 	timer.connect("timeout", Callable(self, "_on_Timer_timeout"))
