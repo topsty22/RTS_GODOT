@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxn2d64v20fyd"]
+[gd_scene load_steps=5 format=3 uid="uid://bxn2d64v20fyd"]
 
-[ext_resource type="PackedScene" uid="uid://vyo3ps4s6lrt" path="res://assets/animation/units/knight.glb" id="1_ej111"]
-[ext_resource type="Script" path="res://scenes/units/knight.gd" id="2_3424v"]
+[ext_resource type="PackedScene" uid="uid://vyo3ps4s6lrt" path="res://assets/animation/units/knight.glb" id="1_fgaih"]
+[ext_resource type="Script" path="res://scripts/units/Knight.gd" id="2_c2ef4"]
+[ext_resource type="Script" path="res://scripts/controler/units/UnitSelection.gd" id="3_d04nm"]
 
-[node name="knight" instance=ExtResource("1_ej111")]
-script = ExtResource("2_3424v")
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ybx4e"]
 
-[node name="Skeleton3D" parent="Armature" index="0"]
+[node name="knight" instance=ExtResource("1_fgaih")]
+script = ExtResource("2_c2ef4")
+
+[node name="Area3D" type="Area3D" parent="Armature" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Armature/Area3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 0, 100, 0, -100, 0, 0, 0, -111.059)
+shape = SubResource("CylinderShape3D_ybx4e")
+
+[node name="Skeleton3D" parent="Armature" index="1"]
 bones/0/position = Vector3(-0.183098, -1.37684, -94.8234)
 bones/0/rotation = Quaternion(-0.737675, 0.0184295, -0.00196391, 0.674902)
 bones/1/rotation = Quaternion(-0.00185921, -0.0196127, -0.0361114, 0.999154)
@@ -82,3 +91,6 @@ bones/64/rotation = Quaternion(-0.137169, 0.0354551, 0.988136, 0.0592784)
 bones/65/rotation = Quaternion(-0.152404, -0.0559212, -0.00282513, 0.986731)
 bones/66/rotation = Quaternion(0.473445, -0.00753507, 0.0578767, 0.878887)
 bones/67/rotation = Quaternion(0.372958, -0.018042, -0.00550614, 0.927656)
+
+[node name="Selection" type="Node3D" parent="." index="2"]
+script = ExtResource("3_d04nm")

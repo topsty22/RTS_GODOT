@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ck2v43o1gv2rj"]
 
-[ext_resource type="Script" path="res://scenes/menu/preload/PreloadScene.gd" id="1_b0tyq"]
+[ext_resource type="Script" path="res://scripts/ui/PreloadScene.gd" id="1_b0tyq"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

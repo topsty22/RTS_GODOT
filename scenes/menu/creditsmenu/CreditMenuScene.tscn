@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwvdx0056a5m5"]
 
-[ext_resource type="Script" path="res://scenes/menu/creditsmenu/CreditMenuScene.gd" id="1_hj763"]
+[ext_resource type="Script" path="res://scripts/ui/CreditMenuScene.gd" id="1_hj763"]
 [ext_resource type="Texture2D" uid="uid://blua5vwb07fyi" path="res://assets/sprites/ui/menu/menubackground.jpg" id="1_wul8e"]
 
 [node name="Control" type="Control"]

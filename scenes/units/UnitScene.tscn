@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bokiq1dq1jbry"]
+
+[ext_resource type="Script" path="res://scripts/controler/units/UnitSelection.gd" id="1_iwq72"]
+[ext_resource type="Script" path="res://scripts/controler/units/UnitMovement.gd" id="2_2ra7o"]
+[ext_resource type="Script" path="res://scripts/controler/units/UnitStats.gd" id="3_e2oye"]
+[ext_resource type="Script" path="res://scripts/controler/units/UnitManager.gd" id="4_q3w04"]
+
+[node name="Units" type="Node3D"]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Selection" type="Node3D" parent="."]
+script = ExtResource("1_iwq72")
+
+[node name="Movement" type="Node3D" parent="."]
+script = ExtResource("2_2ra7o")
+
+[node name="Stats" type="Node3D" parent="."]
+script = ExtResource("3_e2oye")
+
+[node name="Manager" type="Node3D" parent="."]
+script = ExtResource("4_q3w04")

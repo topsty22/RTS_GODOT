@@ -2,7 +2,7 @@ extends Node
 
 func _ready():
 	# Load the knight scene
-	var knight_scene = load("res://scenes/units/knight.tscn")
+	var knight_scene = load("res://scenes/units/KnightScene.tscn")
 	
 	# Instantiate the knight scene
 	var knight_instance = knight_scene.instantiate()
