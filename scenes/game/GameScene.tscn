@@ -29,11 +29,12 @@ directional_shadow_max_distance = 166.5
 script = ExtResource("3_li7p6")
 
 [node name="knight" parent="Units" instance=ExtResource("2_tgfvj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7103, 0.0817969, 8.65644)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7103, 0.128891, 8.65644)
 
 [node name="Map" parent="." instance=ExtResource("1_ikjg3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.9204, 0.12886, -63.0185)
 
 [node name="Camera" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
-transform = Transform3D(0.943524, 0.18908, -0.272051, -5.89065e-09, 0.821149, 0.570714, 0.331305, -0.538482, 0.774774, 16.1921, 2.91697, 11.9486)
+transform = Transform3D(-0.934297, 0.179309, -0.30812, 0.0172284, 0.886001, 0.463363, 0.35608, 0.42761, -0.830877, 13.2189, 5.80679, 3.74649)

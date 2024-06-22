@@ -14,10 +14,10 @@ script = ExtResource("1_hj763")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -471.0
-offset_top = -157.0
-offset_right = 1449.0
-offset_bottom = 923.0
+offset_left = -612.0
+offset_top = -160.0
+offset_right = 1308.0
+offset_bottom = 920.0
 texture = ExtResource("1_wul8e")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

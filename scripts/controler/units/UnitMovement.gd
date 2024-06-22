@@ -7,7 +7,7 @@ var is_moving = false
 func _ready():
 	speed = get_parent().get_node("Stats").get("speed")  # Obtenir la vitesse définie dans UnitStats.gd
 
-func _process(delta):
+func _process(_delta):
 	if is_moving:
 		var unit = get_parent()
 		var direction = (target_position - unit.global_transform.origin).normalized()
