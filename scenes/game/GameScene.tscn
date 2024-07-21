@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwdy70s0ddueu"]
+[gd_scene load_steps=8 format=3 uid="uid://cwdy70s0ddueu"]
 
 [ext_resource type="PackedScene" uid="uid://bokiq1dq1jbry" path="res://scenes/units/UnitScene.tscn" id="1_1rick"]
 [ext_resource type="PackedScene" uid="uid://cuonb6lw6wwo" path="res://scenes/game/MapScene.tscn" id="1_ikjg3"]
+[ext_resource type="Script" path="res://scripts/GameScene.gd" id="1_nh7qy"]
 [ext_resource type="PackedScene" uid="uid://bxn2d64v20fyd" path="res://scenes/units/KnightScene.tscn" id="2_tgfvj"]
 [ext_resource type="Script" path="res://scripts/controler/handler/SelectionManager.gd" id="3_li7p6"]
 
@@ -10,6 +11,7 @@
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_gm7jq"]
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_nh7qy")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4dwda")
@@ -29,12 +31,16 @@ directional_shadow_max_distance = 166.5
 script = ExtResource("3_li7p6")
 
 [node name="knight" parent="Units" instance=ExtResource("2_tgfvj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7103, 0.128891, 8.65644)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 15.7103, 0.128891, 8.65644)
 
 [node name="Map" parent="." instance=ExtResource("1_ikjg3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.9204, 0.12886, -63.0185)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -63.019)
 
 [node name="Camera" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
-transform = Transform3D(-0.934297, 0.179309, -0.30812, 0.0172284, 0.886001, 0.463363, 0.35608, 0.42761, -0.830877, 13.2189, 5.80679, 3.74649)
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 100, 76.5, 45)
+projection = 1
+size = 100.0
+near = 0.005
+far = 200.0

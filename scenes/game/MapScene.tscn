@@ -27,6 +27,7 @@ script = ExtResource("1_7x33g")
 [node name="Geometry" type="Node3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Geometry"]
+visible = false
 mesh = SubResource("ArrayMesh_gu38w")
 
 [node name="map" parent="Geometry/MeshInstance3D" instance=ExtResource("2_ytrak")]
@@ -34,11 +35,13 @@ transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, -0.00012207, 4
 
 [node name="Terrain" type="MeshInstance3D" parent="Geometry"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
-visible = false
 mesh = SubResource("PlaneMesh_h7a2u")
 
 [node name="Background" type="MeshInstance3D" parent="Geometry"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
-visible = false
 material_override = SubResource("StandardMaterial3D_k3whp")
 mesh = SubResource("PlaneMesh_qmprw")
+
+[node name="Tilemap" type="Node3D" parent="."]
+
+[node name="GridMap" type="GridMap" parent="Tilemap"]
